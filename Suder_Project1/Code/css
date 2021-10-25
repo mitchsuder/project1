@@ -1,0 +1,255 @@
+/* color vars */
+:root {
+	--main-color: #019de6;
+	--dk-color: #0570a1;
+	--md-color: #5dc1f0;
+	--lt-color: #a8dff8;
+	--lt-lt-color: #daf3ff;
+	--white: #eee;
+	--black: #222;
+}
+
+
+/* google font style */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+h5,
+h6 {
+	text-transform: uppercase;
+	letter-spacing: 0.3px;
+	padding-top: 0.3rem;
+}
+
+
+/* media query related styles */
+/* styles for extra-small (mobile) devices */
+h1 {
+	font-size: 2.6rem;
+	line-height: 2.7rem;
+	letter-spacing: -0.04rem;
+}
+
+header {
+	padding: 2rem 1rem 1.5rem;
+}
+
+section {
+	padding: 2rem 1rem 2.2rem;
+}
+
+footer {
+	padding: 2rem 1rem 4rem;
+}
+
+/* styles for small devices */
+@media (min-width: 576px) {
+	h1 {
+		font-size: 3.0rem;
+		line-height: 3.2rem;
+		letter-spacing: -0.09rem;
+	}
+
+	header {
+		padding: 4rem 4rem 3rem;
+	}
+
+	section {
+		padding: 7rem 4rem 8rem;
+	}
+
+	footer {
+		padding: 3rem 4rem 5rem;
+	}
+}
+
+/* styles for medium devices */
+@media (min-width: 768px) {
+	h1 {
+		font-size: 4.5rem;
+		line-height: 4.8rem;
+		letter-spacing: -0.11rem;
+	}
+
+	header {
+		padding: 6rem 7rem 5rem;
+	}
+
+	section {
+		padding: 6rem 7rem 8rem;
+	}
+
+	footer {
+		padding: 3rem 7rem 5rem;
+	}
+}
+
+
+/* styles for large devices */
+@media (min-width: 992px) {}
+
+/* styles for extra-large devices */
+@media (min-width: 1200px) {}
+
+
+/* body margin used to offset height of navbar */
+body {
+	margin-top: 56px;
+}
+
+
+/* nav */
+.nav-pills .nav-link.active {
+	color: var(--w);
+	background-color: var(--dk-color);
+}
+
+.navbar-nav .nav-link {
+	padding-left: 14px;
+}
+
+
+/* colors */
+.dk-color {
+	background-color: var(--dk-color);
+}
+
+.lt-color {
+	background-color: var(--md-color);
+}
+
+.xlt-color {
+	background-color: var(--lt-color);
+}
+
+.white-type {
+	color: var(--white);
+}
+
+
+/* cards */
+.card {
+	padding: 0.7rem;
+	margin-bottom: 2rem;
+	border: 0;
+	background-color: var(--lt-lt-color);
+}
+
+.card>img {
+	margin-bottom: 0.75rem;
+}
+
+.card-text {
+	font-size: 95%;
+}
+
+
+/* footer */
+.dark-footer {
+	background-color: var(--dk-color);
+	color: var(--white);
+	padding-top: 2rem;
+	padding-bottom: 4rem;
+	min-height: 300px;
+}
+
+.dark-footer a {
+	color: var(--white);
+	text-decoration: underline;
+}
+
+.dark-footer a:hover {
+	color: var(--white);
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #8e8e8e;
+  transition: color .15s ease-in-out;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
